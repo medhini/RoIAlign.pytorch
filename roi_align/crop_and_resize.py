@@ -19,8 +19,8 @@ class CropAndResizeFunction(Function):
 
         if image.is_cuda:
             _backend.crop_and_resize_gpu_forward(
-                image, boxes, box_ind,
-                self.extrapolation_value, self.crop_height, self.crop_width, crops)
+                image, boxes, box_ind, self.extrapolation_value, 
+                self.crop_height, self.crop_width, crops)
         else:
             _backend.crop_and_resize_forward(
                 image, boxes, box_ind,

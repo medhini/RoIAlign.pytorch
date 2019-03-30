@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CUDA_PATH=/usr/local/cuda
+CUDA_PATH=/usr/local/cuda-8.0
 
 echo "Compiling crop_and_resize kernels by nvcc..."
 cd roi_align/src/cuda
